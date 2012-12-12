@@ -1,162 +1,135 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
-<html lang="pt-br">
-<head>
-	<title>Identidade Visual do Governo Federal na Internet</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Identidade Visual do Governo Federal na Internet</title>
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/text.css" />
+        <link rel="stylesheet" href="css/960.css" />
+        <link rel="stylesheet" href="css/demo.css"/>
+        <link rel="alternate stylesheet" href="css/contraste.css" title="alto_contraste"/>        
 
-	<link href="style.css" media="all" rel="stylesheet" type="text/css">	
-    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
-    
-    <!--[if !IE 7]>
-    	<style type="text/css">
-	    	#wrap {display:table;height:100%}
-	    </style>
-    <![endif]-->	
-    
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
-    <script src="js/effects.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#menu li a").click(function() {
-                $("link").attr("href",$(this).attr('rel'));
-                return false;
-            });
-        
-            $(".iautocontraste a").click(function() {
-                $("link").attr("href",$(this).attr('rel'));
-                $(this).attr('rel',($(this).attr('rel')=="autocontraste.css") ? "style.css" : "autocontraste.css");
-                return false;
-            });
-        });
-    </script>
-</head>
+        <script type="text/javascript">
+            function change_bar(color) {                
+                var remove_js = document.getElementsByTagName('script')[1];
+                var r_js = remove_js.parentNode.removeChild(remove_js);
+                var remove_css = document.getElementsByTagName('style')[0];
+                var r_css = remove_css.parentNode.removeChild(remove_css);                
+                var headID = document.getElementsByTagName('body')[0];
+                var newScript = document.createElement('script');                
+                newScript.type = 'text/javascript';
+                newScript.src = 'http://barra.brasil.gov.br/barra.js?cor='+color;
+                headID.appendChild(newScript).reload();
+            }   
 
+            function alto_contraste(title) {
+                var i, a;
+                for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+                    if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+                    a.disabled = true;
+                    if(a.getAttribute("title") == title) a.disabled = false;
+                    }
+                }
+            }
+        </script>
+    </head>
 <body>
 
-<div id="barra-brasil">   
-    <div class="barra">
-        <ul>
-            <li><a href="http://www.acessoainformacao.gov.br" class="ai" title="Acesso à informação">www.sic.gov.br</a></li>
-            <li><a href="http://www.brasil.gov.br" class="brasilgov" title="Portal de Estado do Brasil">www.brasil.gov.br</a></li>        
-        </ul>
-    </div>
-</div>
+    <div id="barra-brasil">
+        <a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a>
+    </div>    
 
-<div id="wrap">
-
-    <div id="barra-auxiliar">
-        <div class="pular">
-            <a href="#principal" class="ipular" title="Pular para conteúdo">Pular para conteúdo</a>
-        </div>        
-        <div class="acessibilidade">
-	        <ul>
-	            <li class="iaumentar"><a class="aumentar" href="#" title="Aumentar fonte">Aumentar Fonte</a></li>
-	            <li class="inormal"><a class="normal" href="#" title="Tamanho normal da fonte">Tamanho Normal</a></li>
-	            <li class="idiminuir"><a class="diminuir" href="#" title="Diminuir fonte">Diminuir Fonte</a></li>
-                <li class="iautocontraste"><a class="autocontraste" href="#" rel="autocontraste.css" title="Auto Contraste">Auto Contraste</a></li>
-            </ul>
+    <div id="acessibilidade">
+        
+        <div class="container">
+            
+                <ul class="atalhos">
+                    <li><a href="#content" accesskey="1" class="ipular">Ir para Conteúdo</a></li>                    
+                </ul>            
+            
+                <ul class="links">
+                    <li><a href="#" class="iacessibilidade" onclick="alto_contraste('','1')">Contraste Normal</a></li>
+                    <li><a href="#" class="iautocontraste" onclick="alto_contraste('alto_contraste','1')">Alto Contraste</a></li>
+                </ul>
+            
         </div>
-    </div><!-- #barra-auxiliar -->
+        <div class="clear"></div>
+        
+    </div>
 
-	<div id="header">
-	        <div class="h-esquerda">
+    <div id="header">
+        <div class="container_12">
+            <div class="grid_8 suffix_1">
                 <h1>Identidade Visual do Governo Federal na Internet</h1>
+                <span class="beta">Versão Beta</span>
                 <p>Sobre o uso e a aplicação da barra de identidade. Para maiores detalhes consulte o <a href="http://www.secom.gov.br/arquivos-de-manuais-e-marca/manual-de-identidade-visual-do-governo-federal-na-internet-">Manual de Identidade Visual do Governo Federal na Internet Regras de aplicação da Barra de Identidade</a>.</p>
-            </div>        
-            <div class="h-direita">
-        		<a href="http://www.governoeletronico.gov.br" title="Site do Programa de Governo Eletrônico Brasileiro" class="logo-govbr">Programa de Governo Eletrônico Brasileiro</a>
             </div>
-	</div><!-- #header -->
-	
-	<div id="principal">
-   	   
-        <div class="p-esquerda"> 
-            <h2>Sobre a barra</h2>
-            <p>A barra tem a função de identificar, padronizar e integrar sites e portais do Governo Federal. À sua direita, a marca do Governo Federal com link para o Portal de Estado do Brasil <a href="https://www.brasil.gov.br">www.brasil.gov.br.</a></p>
-            <p>Seu uso está normatizado por meio da Instrução Normativa nº 2, de 16 de dezembro de 2009, que pode ser encontrada no site da <a href="http://www.secom.gov.br/manuais-e-marca/internet">Secretaria de Comunicação Social da Presidência da República - Secom</a>.</p>
-            <p>A implementação apresentada traz melhorias no código dos exemplos disponibilizados como: redução da quantidade de código; conformidade e acessibilidade.</p>
-            <p>Faça o download das imagens e aplique os códigos abaixo.</p>
-            <div class="download"><a href="imagens.zip" class="l-download">Download das Imagens (12,5 KB, .zip)</a></div>
+            <div class="grid_3">
+                <a href="http://www.governoeletronico.gov.br" title="Site do Programa de Governo Eletrônico Brasileiro" class="logo-govbr">Programa de Governo Eletrônico Brasileiro</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 
-<h2>Aplicando o HTML</h2>
+    <div id="content">
+        <div class="container_12">
+            <div class="grid_8 suffix_1">
+                <h2>Sobre a barra</h2>
+                
+                <p>A barra tem a função de identificar, padronizar e integrar sites e portais do Governo Federal. À sua direita constam as marcas do Governo Federal e da Lei de Acesso a Informação com links para acesso ao Portal de Estado do Brasil <a href="http://www.brasil.gov.br">www.brasil.gov.br</a> e o site oficial sobre a lei de acesso a informação da Controladoria Geral da União <a href="http://www.acessoainformacao.gov.br">www.acessoainformacao.gov.br</a>.</p>
+
+                <p>Seu uso está normatizado por meio da Instrução Normativa nº 2, de 16 de dezembro de 2009, que pode ser encontrada no site da <a href="http://www.secom.gov.br/manuais-e-marca/internet">Secretaria de Comunicação Social da Presidência da República - Secom</a>.</p>
+                
+                <p>Cada órgão é responsável pela implementação da barra em seus sítios e portais. Semelhantemente a atualização da barra é de responsabilidade do órgão. Com o objetivo de padronizar a codificação e garantir a aderência às normas da Adminstração Pública, a nova versão da barra utiliza uma arquitetura integrada e dinâmica.</p>
+
+                <p>A barra funciona de forma dinâmica. Todos os sítios e portais que utilizam esta versão apresentam o conteúdo da barra mais atual.</p>                
+
+                <h2>Instruções para o uso da barra</h2>                
+
+                <h3>Aplicando o Javascript</h3>
+
+                <p>Código responsável por fazer a seleção da barra. A cor é definida utilizando o parâmentro 'cor' com uma das opções: 'azul', 'preta', 'cinza' ou 'verde'. Para otimizar o carregamento recomenda-se colocar a tag &lt;script&gt; antes do fechamento do &lt;body&gt;.</p>
+
+<pre>
+&lt;script src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+
+                <h3>Aplicando o Javascript</h3>
+
+                <p>Código responsável pelo carregamento do HTML da barra conforme parametrização indicada no javascript. Em casos que o javascript do browser não esteja habilitado, o código deste HTML é carregado, inserindo uma barra padrão para que o sítio ou portal não fique sem identificação.</p>
 <pre>
 &lt;div id="barra-brasil"&gt;
-    &lt;div class="barra"&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href="http://www.acessoainformacao.gov.br" class="ai" title="Acesso à informação">www.sic.gov.br&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="http://www.brasil.gov.br" class="brasilgov" title="Portal de Estado do Brasil">www.brasil.gov.br&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
+    &lt;a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro&lt;/a&gt;
 &lt;/div&gt;
 </pre>
 
-<h2>Aplicando o CSS</h2>
+            </div>
+            <div class="grid_3">
+                <h3>Cores Disponíveis</h3>
+                <span class="info">Clique na paleta para visualizar</span>
+                <ul id="cores">
+                    <li><a href="#" id="verde" onclick="change_bar('verde')">verde</a></li>
+                    <li><a href="#" id="cinza" onclick="change_bar('cinza')">cinza</a></li>
+                    <li><a href="#" id="preta" onclick="change_bar('preta')">preta</a></li>
+                    <li><a href="#" id="azul" onclick="change_bar('azul')">azul</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 
-<p>Ao aplicar o CSS levar em consideração a técnica <a href="https://www.google.com/search?q=css+reset">CSS Reset</a> para uma melhor visualização e compatibilidade com outos navegadores. O exemplo abaixo é relativo a cor azul (hexadecimal: #004b82).</p>
-
-<pre>
-#barra-brasil { 
-    position:relative;
-    overflow:hidden;
-    min-width:1000px;
-    background: #004b82 url(imagens/barra-brasil-v3-bgx.png) center bottom no-repeat;
-}
-
-#barra-brasil .barra {
-    display: block;
-    width: 960px;
-    height:28px;
-    margin: 0 auto;
-    background: url(imagens/barra-brasil-v3-bgx.gif) 0 bottom repeat-x;
-}
-
-#barra-brasil .barra ul {
-    float:right;
-    width: 319px;
-}
-
-#barra-brasil .barra ul li {
-    float: left;
-    padding-left: 25px;
-}
-
-#barra-brasil .ai {
-    display: block;
-    width: 161px;
-    height: 28px;
-    text-indent: -1000px;
-    background: #004b82 url(imagens/ai.png) no-repeat 0 4px;
-}
-
-#barra-brasil .brasilgov {
-    display: block;
-    width: 101px;
-    height: 28px;
-    text-indent: -1000px;
-    background: #004b82 url(imagens/brasil.png) no-repeat 0 4px;
-}
-</pre>
-        </div><!-- p-esquerda -->
-        
-        <div class="p-direita">
-            <h3>Cores Disponíveis</h3>
-            <ul id="menu">
-                <li><a href="#" rel="verde.css">Verde</a> <span class="hexa">Hexadecimal</span> <span class="verde">#00500F</span></li>
-                <li><a href="#" rel="cinza.css">Cinza</a> <span class="hexa">Hexadecimal</span> <span class="cinza">#7F7F7F</span></li>
-                <li><a href="#" rel="preto.css">Preto</a> <span class="hexa">Hexadecimal</span> <span class="preto">#000000</span></li>
-                <li><a href="#" rel="style.css">Azul</a> <span class="hexa">Hexadecimal</span> <span class="azul">#004B82</span></li>
-            </ul>
-
-        </div><!-- p-direita -->
-        
-	</div><!-- #principal -->
-		
-</div><!-- #wrap -->
-
-<div id="footer">
-    <a class="twitter" href="http://twitter.com/egovbr">Siga o Gov.br</a>    
-    <a class="marca-governo" href="http://www.planejamento.gov.br">Ministério do Planejamento, Orçamento e Gestão</a>
-</div><!-- #footer -->
-
+    <div id="footer">
+        <div class="container_12">
+            <div class="grid_6">
+                <a class="twitter" href="http://twitter.com/egovbr">Siga o Gov.br</a>
+            </div>
+            <div class="grid_6">
+                <a class="marca-governo" href="http://www.planejamento.gov.br">Ministério do Planejamento, Orçamento e Gestão</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <script id="teste" src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"></script>    
 </body>
 </html>

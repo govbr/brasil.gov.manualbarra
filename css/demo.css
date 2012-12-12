@@ -1,0 +1,196 @@
+body {
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  height: auto;
+}
+
+a {
+  color: #004B82;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {  
+  padding-top: 20px;
+  text-shadow: 0px 2px 0px #ccc;
+  letter-spacing: -1px;
+}
+
+h2 {
+  background: #004B82;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 20px 0 2px 3px;
+  text-shadow: 0px 1px 0px #333;
+}
+
+p {  
+  overflow: hidden;
+  padding: 5px 0 10px 0;
+  line-height: 1.6em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.container_12 {
+  background-color: #fff;
+  background-repeat: repeat-y;
+  margin-bottom: 20px;
+}
+
+/* `Barra Acessibilidade
+----------------------------------------------------------------------------------------------------*/
+
+#acessibilidade {  
+  background: url(../img/bg-acessibilidade.png) repeat-x;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+#acessibilidade .atalhos {
+  float: left;  
+}
+
+#acessibilidade .atalhos li{
+  display: inline;
+  padding: 0 0 0 0px;
+}
+
+#acessibilidade .links {
+  float: right;
+  background: url(../img/bg-links.png) no-repeat 165px 0 ;
+}
+
+#acessibilidade .links li{
+  display: inline;
+  padding: 6px 10px;
+}
+
+.ipular {background: url(../img/i_pular.png) no-repeat 0px 3px; width: 10px; height: 10px; padding-left: 18px}
+.ipular:hover {background: url(../img/i_pular.png) no-repeat 0px -10px; width: 10px; height: 10px; padding-left: 18px}
+
+.iacessibilidade {background: url(../img/contraste.png) no-repeat 2px 1px; width: 15px; height: 10px; padding-left: 20px}
+.iautocontraste {background: url(../img/altocontraste.png) no-repeat 2px 1px; width: 15px; height: 10px; padding-left: 20px}
+
+/* `Header
+----------------------------------------------------------------------------------------------------*/
+
+.logo-govbr {
+  background: url(../img/govbr-epwg.png) no-repeat;
+  display: block;
+  height: 85px;
+  text-indent: -99999em;
+  width: 220px;
+}
+
+#header .grid_8 {position: relative;}
+
+.beta {
+  position: absolute;
+  width: 55px;
+  height: 58px;
+  background: url(../img/beta.png) no-repeat 2px 4px;
+  text-indent: -99999px;
+  right: 80px;
+  top: -15px;  
+}
+
+/* `Content
+----------------------------------------------------------------------------------------------------*/
+
+code, pre {
+  border: 1px solid #ccc;
+  background: #F8F8F8;
+  color: #000000;
+  display: block;
+  font-family: 'Courier New',Courier,Fixed,monospace;
+  font-size: 100%;
+  
+  line-height: 17px;
+  margin: 1em 0;
+  overflow: auto;
+  padding: 5px 20px 5px 30px;
+  text-align: left;
+}
+
+
+/* `Sidebar
+----------------------------------------------------------------------------------------------------*/
+
+.grid_3 h3 {
+  background: #004B82;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 20px 0 2px 3px;
+  text-shadow: 0px 1px 0px #333;
+}
+
+.info {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#cores li {
+  list-style: none;
+  display: inline-block;  
+  margin: 0;
+  padding: 0;
+}
+
+#cores li a{
+  display: block;
+  padding: 10px;
+  text-indent: -99999px;
+  width: 32px;
+}
+
+#verde {background: #00500F; -moz-box-shadow: inset 0 0 10px #fff; -webkit-box-shadow: inset 0 0 10px #fff; box-shadow: inset 0 0 10px #fff;}
+#cinza {background: #7F7F7F ; -moz-box-shadow: inset 0 0 10px #fff; -webkit-box-shadow: inset 0 0 10px #fff; box-shadow: inset 0 0 10px #fff;}
+#preta {background: #000000; -moz-box-shadow: inset 0 0 10px #fff; -webkit-box-shadow: inset 0 0 10px #fff; box-shadow: inset 0 0 10px #fff;}
+#azul {background: #004B82; -moz-box-shadow: inset 0 0 10px #fff; -webkit-box-shadow: inset 0 0 10px #fff; box-shadow: inset 0 0 10px #fff;}
+
+/* `Footer
+----------------------------------------------------------------------------------------------------*/
+
+#footer {
+  padding-top: 10px;
+  background: #ECECEC url(../img/bg-footer.png) repeat-x;
+  height: 80px;
+  margin: 0;
+}
+
+
+#footer .container_12 {
+  background: #ECECEC;  
+}
+
+.twitter {
+  position: relative;
+  left: 0px;
+  top: 30px;
+  display: block;
+  width: 100px;
+  height: 20px;
+  background: url(../img/twitter.png) no-repeat;
+  padding-left: 45px;
+  font-size: 1.2em;
+}
+
+.marca-governo {
+  display: block;
+  width: 300px;
+  height: 62px;
+  background: url(../img/marca-governo.png) no-repeat;
+  float: right;
+  text-indent: -1000em;
+}
