@@ -38,7 +38,8 @@
 
     <div id="barra-brasil">
         <a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a>
-    </div>    
+    </div>
+    <script id="teste" src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"></script>   
 
     <div id="acessibilidade">
         
@@ -87,21 +88,15 @@
 
                 <h2>Instruções para o uso da barra</h2>                
 
-                <h3>Aplicando o Javascript</h3>
-
-                <p>Código responsável por fazer a seleção da barra. A cor é definida utilizando o parâmetro 'cor' com uma das opções: 'azul', 'preta', 'cinza' ou 'verde'. Para otimizar o carregamento recomenda-se colocar a tag <script> abaixo antes do fechamento do <body>.</p>
-
-<pre>
-<script src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"></script>
-</pre>
-
                 <h3>Aplicando o HTML</h3>
 
-                <p>Código responsável pelo carregamento do HTML da barra conforme parametrização indicada no javascript. Em casos que o javascript do browser não esteja habilitado, o código deste HTML é carregado, inserindo uma barra padrão para que o sítio ou portal não fique sem identificação.</p>
+                <p>Cole este código logo após a abertura da tag <body>. Selecione a cor clicando nas opções no menu a direita.</p>
+
 <pre>
 <div id="barra-brasil">
     <a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a>
 </div>
+<script src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"></script>
 </pre>
 
             </div>
@@ -129,7 +124,6 @@
             </div>
             <div class="clear"></div>
         </div>
-    </div>
-    <script id="teste" src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"></script>    
+    </div>    
 </body>
 </html>
