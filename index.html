@@ -11,18 +11,6 @@
         <link rel="alternate stylesheet" href="css/contraste.css" title="alto_contraste"/>        
 
         <script type="text/javascript">
-            function change_bar(color) {                
-                var remove_js = document.getElementsByTagName('script')[1];
-                var r_js = remove_js.parentNode.removeChild(remove_js);
-                var remove_css = document.getElementsByTagName('style')[0];
-                var r_css = remove_css.parentNode.removeChild(remove_css);                
-                var headID = document.getElementsByTagName('body')[0];
-                var newScript = document.createElement('script');                
-                newScript.type = 'text/javascript';
-                newScript.src = 'http://barra.brasil.gov.br/barra.js?cor='+color;
-                headID.appendChild(newScript).reload();
-            }   
-
             function alto_contraste(title) {
                 var i, a;
                 for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
@@ -63,7 +51,6 @@
         <div class="container_12">
             <div class="grid_8 suffix_1">
                 <h1>Identidade Visual do Governo Federal na Internet</h1>
-                <span class="beta">Versão Beta</span>
                 <p>Sobre o uso e a aplicação da barra de identidade. Para maiores detalhes consulte o <a href="http://www.secom.gov.br/arquivos-de-manuais-e-marca/manual-de-identidade-visual-do-governo-federal-na-internet-">Manual de Identidade Visual do Governo Federal na Internet Regras de aplicação da Barra de Identidade</a>.</p>
             </div>
             <div class="grid_3">
@@ -75,10 +62,10 @@
 
     <div id="content">
         <div class="container_12">
-            <div class="grid_8 suffix_1">
+            <div class="grid_12 suffix_1">
                 <h2>Sobre a barra</h2>
                 
-                <p>A barra tem a função de identificar, padronizar e integrar sítios e portais do Governo Federal. À sua direita constam as marcas do Governo Federal e da Lei de Acesso à Informação com links para acesso ao Portal de Estado do Brasil <a href="http://www.brasil.gov.br">www.brasil.gov.br</a> e o sítio oficial sobre acesso à informação <a href="http://www.acessoainformacao.gov.br">www.acessoainformacao.gov.br</a>.</p>
+                <p>A barra tem a função de identificar, padronizar e integrar sítios e portais do Governo Federal. À sua esquerda constam as marcas do Governo Federal e da Lei de Acesso à Informação com links para acesso ao Portal de Estado do Brasil <a href="http://www.brasil.gov.br">www.brasil.gov.br</a> e o sítio oficial sobre acesso à informação <a href="http://www.acessoainformacao.gov.br">www.acessoainformacao.gov.br</a>. À sua direita constam outros links de grande relevância aos cidadãos.</p>
 
                 <p>Seu uso está normatizado por meio da Instrução Normativa nº 2, de 16 de dezembro de 2009, que pode ser encontrada no sítio da <a href="http://www.secom.gov.br/manuais-e-marca/internet">Secretaria de Comunicação Social da Presidência da República - Secom</a>.</p>
                 
@@ -90,25 +77,15 @@
 
                 <h3>Aplicando o Script</h3>
 
-                <p>Cole este código logo após a abertura da tag <body>. Selecione a cor clicando nas opções no menu a direita.</p>
+                <p>Cole este código logo após a abertura da tag &lt;body&gt;.</p>
 
 <pre>
 &lt;div id="barra-brasil"&gt;
     &lt;a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; "&gt;Portal do Governo Brasileiro&lt;/a&gt;
 &lt;/div&gt;
-&lt;script src="http://barra.brasil.gov.br/barra.js?cor=azul" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="http://barra.brasil.gov.br/barra.js" type="text/javascript"&gt;&lt;/script&gt;
 </pre>
 
-            </div>
-            <div class="grid_3">
-                <h3>Cores Disponíveis</h3>
-                <span class="info">Clique na paleta para visualizar</span>
-                <ul id="cores">
-                    <li><a href="#" id="verde" onclick="change_bar('verde')">verde</a></li>
-                    <li><a href="#" id="cinza" onclick="change_bar('cinza')">cinza</a></li>
-                    <li><a href="#" id="preta" onclick="change_bar('preta')">preta</a></li>
-                    <li><a href="#" id="azul" onclick="change_bar('azul')">azul</a></li>
-                </ul>
             </div>
             <div class="clear"></div>
         </div>
