@@ -65,17 +65,21 @@
             <div class="grid_12 suffix_1">
                 <h2>Sobre a barra</h2>
                 
-                <p>A barra tem a função de identificar, padronizar e integrar sítios e portais do Governo Federal. À sua esquerda constam as marcas do Governo Federal e da Lei de Acesso à Informação com links para acesso ao Portal de Estado do Brasil <a href="http://www.brasil.gov.br">www.brasil.gov.br</a> e o sítio oficial sobre acesso à informação <a href="http://www.acessoainformacao.gov.br">www.acessoainformacao.gov.br</a>. À sua direita constam outros links de grande relevância aos cidadãos.</p>
+                <p>A barra de Identidade Visual do Governo Federal na Internet tem a função de identificar, padronizar e integrar sítios e portais do Governo Federal. A barra também tem a função de proporcionar acesso direto ao Portal Brasil - <a href="http://brasil.gov.br">brasil.gov.br</a>, às informações públicas de acordo com a Lei de acesso à informação, aos canais de participação social, ao portal de serviços prestados pelos diversos órgãos - <a href="http://servicos.gov.br/">servicos.gov.br/</a>, página com toda a legislação brasileira - <a href="http://planalto.gov.br/legislacao/">planalto.gov.br/legislacao/</a> e link para os canais de comunicação do Governo Federal.</p>
 
                 <p>Seu uso está normatizado por meio da Instrução Normativa nº 2, de 16 de dezembro de 2009, que pode ser encontrada no sítio da <a href="http://www.secom.gov.br/manuais-e-marca/internet">Secretaria de Comunicação Social da Presidência da República - Secom</a>.</p>
                 
-                <p>Cada órgão é responsável pela implementação da barra em seus sítios e portais. Semelhantemente a atualização da barra é de responsabilidade do órgão. Com o objetivo de padronizar a codificação e garantir a aderência às normas da Adminstração Pública, a nova versão da barra utiliza uma arquitetura integrada e dinâmica.</p>
+                <p>Com o objetivo de padronizar a codificação e garantir a aderência às normas da Administração Pública, a nova versão da barra utiliza uma arquitetura integrada e dinâmica, não precisa ser desenvolvida, pois sua funcionalidade encontra-se corretamente configurada e pronta para uso.</p>
+
+                <p>A publicação da barra pelos órgãos deverá ser feita de maneira dinâmica por meio da inclusão do código publicado no item Instruções para Uso da Barra no HTML do sítio ou portal.</p>                
+
+                <p>Após esta primeira publicação, as demais atualizações serão automáticas.</p>                
 
                 <p>A barra funciona de maneira unificada. Todos os sítios e portais que utilizam esta versão apresentam os conteúdos uniformizados.</p>                
 
                 <h2>Instruções para o uso da barra</h2>                
 
-                <h3>Aplicando o Script</h3>
+                <h3>Aplicando os Scripts</h3>
 
                 <p>Cole este código logo após a abertura da tag &lt;body&gt;.</p>
 
@@ -83,6 +87,11 @@
 &lt;div id="barra-brasil"&gt;
     &lt;a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; "&gt;Portal do Governo Brasileiro&lt;/a&gt;
 &lt;/div&gt;
+</pre>
+
+<p>Cole este código ao final antes do fenchamento da tag &lt;body&gt;. A boa prática orienta que códigos JavaScript que modificam a página no momento do carregamento devem ser declarados ao final do elemento &lt;body&gt;.</p>
+
+<pre>
 &lt;script src="http://barra.brasil.gov.br/barra.js" type="text/javascript"&gt;&lt;/script&gt;
 </pre>
 
