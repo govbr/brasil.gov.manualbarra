@@ -84,15 +84,18 @@
                 <p>Cole este código logo após a abertura da tag <body>.</p>
 
 <pre>
-&lt;div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block;"&gt; 
- &lt;a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;"&gt;Portal do Governo Brasileiro&lt;/a&gt;&lt;br/&gt; &amp;mdash; &lt;a href="http://epwg.governoeletronico.gov.br/atualize.html" style="font-family:sans,sans-serif; text-decoration:none; color:white;"&gt;Atualize sua barra de governo&lt;/a&gt;
+&lt;div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"&gt; 
+	&lt;ul id="menu-barra-temp" style="list-style:none;"&gt;
+		&lt;li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"&gt;&lt;a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;"&gt;Portal do Governo Brasileiro&lt;/a&gt;&lt;br/&gt;&lt;/li&gt; &amp;mdash;
+		&lt;li&gt;&lt;a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html"&gt;Atualize sua Barra de Governo&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
 &lt;/div&gt;
 </pre>
 
 <p>Cole este código ao final antes do fenchamento da tag <body>. A boa prática orienta que códigos JavaScript que modificam a página no momento do carregamento devem ser declarados ao final do elemento <body>.</p>
 
 <pre>
-<script src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+&lt;script src="//barra.brasil.gov.br/barra.js" type="text/javascript"&gt;&lt;/script&gt;
 </pre>
 
             </div>
