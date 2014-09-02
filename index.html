@@ -97,8 +97,10 @@
 <p>Cole este código ao final antes do fechamento da tag &lt;body&gt;. A boa prática orienta que códigos JavaScript que modificam a página no momento do carregamento devem ser declarados ao final do elemento &lt;body&gt;.</p>
 
 <pre>
-&lt;script defer async src="//barra.brasil.gov.br/barra.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script defer="defer" async="async" src="//barra.brasil.gov.br/barra.js" type="text/javascript"&gt;&lt;/script&gt;
 </pre>
+
+Se utilizar em XHTML não é permitido a minificar os atributos. Se for em HTML é possível utilizar somente 'defer' e 'async' conforme <a href="http://www.w3schools.com/tags/tag_script.asp">especificação da tag script pelo W3C</a>.
 
             </div>
             <div class="clear"></div>
