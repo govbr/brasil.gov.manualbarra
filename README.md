@@ -1,4 +1,4 @@
-brasil.gov.manualbarra
+manualbarra.govbr
 ======================
 
 Manual de utilização da barra do governo brasileiro
