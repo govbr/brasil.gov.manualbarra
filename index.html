@@ -88,7 +88,8 @@
                 <h2>Instruções para o uso da barra</h2>                
 
                 <h3>Aplicando os Scripts</h3>
-
+<ol>
+<li><h4>Habilitando a barra na página</h4>
                 <p>Cole este código logo após a abertura da tag &lt;body&gt;.</p>
 
 <pre>
@@ -106,7 +107,23 @@
 &lt;script defer="defer" src="//barra.brasil.gov.br/barra.js" type="text/javascript"&gt;&lt;/script&gt;
 </pre>
 
-<p>Se utilizar em XHTML não é permitido a minificar os atributos. Se for em HTML é possível utilizar somente 'defer' conforme <a href="http://www.w3schools.com/tags/tag_script.asp">exemplo feito pelo W3Schools</a>.</p>
+<p>Se utilizar em XHTML não é permitido a minificar os atributos. Se for em HTML é possível utilizar somente 'defer' conforme <a href="http://www.w3schools.com/tags/tag_script.asp">exemplo feito pelo W3Schools para a tag script</a>.</p>
+</li>
+
+<li><h4>Mantendo o contexto do órgão no Portal de Serviços ao clicar no link 'Serviços' da barra</h4>
+
+<p>Para habilitar o parâmentro 'orgao' no link de 'Serviços' cole este código na tag &lt;head&gt;.</p>
+
+<pre>
+&lt;meta property="creator.productor" content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/<strong>NUMERO</strong>"&gt; 
+</pre>
+
+<p>Atenção: Troque o <strong>NUMERO</strong> pelo número correto do órgão no SIORG. <a href="http://siorg.planejamento.gov.br">Acesse o SIORG e procure pelo seu órgão.</a></p> 
+
+</li>
+
+<li>
+<h4>Habilitando o footer dinâmico na barra</h4>
 
 <p>Para o footer dinâmico coloque este código no local do footer e aplique um dos css abaixo conforme seu tema</p>
 
@@ -140,16 +157,21 @@
    max-width: 100%;
 }
 </pre>
+</li>
+<li>
+<h4>Para habilitar/desabilitar o alto contraste na barra</h4>
 
-Para habilitar o alto contraste da barra e do rodapé habilite a classe 'contraste' no body:
+<p>Para habilitar o alto contraste da barra e do rodapé habilite a classe 'contraste' no body:</p>
 <pre>
 &lt;body class="contraste"&gt;    
 </pre>
 
-Para desabilitar o alto contraste da barra e do rodapé desabilite a classe 'contraste' no body:
+<p>Para desabilitar o alto contraste da barra e do rodapé desabilite a classe 'contraste' no body:</p>
 <pre>
 &lt;body class=""&gt;    
 </pre>
+</li>
+</ol>
 
             </div>
             <div class="clear"></div>
