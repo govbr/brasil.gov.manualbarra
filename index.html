@@ -90,7 +90,7 @@
                 <h3>Aplicando os Scripts</h3>
 <ol>
 <li><h4>Habilitando a barra na página</h4>
-                <p>Cole este código logo após a abertura da tag &lt;body&gt;.</p>
+                <p>Cole este código após a abertura da tag &lt;body&gt;.</p>
 
 <pre>
 &lt;div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"&gt; 
@@ -100,6 +100,8 @@
 	&lt;/ul&gt;
 &lt;/div&gt;
 </pre>
+
+<p> Atenção! A página deve implementar a <a href="http://emag.governoeletronico.gov.br/#s3.1"> recomendação da eMAG 1.5 de fornecer âncoras para ir direto a um bloco de conteúdo.</a> O primeiro link da página deve ser o de ir para o conteúdo</p>. Veja um <a href="https://github.com/plonegovbr/brasil.gov.temas/commit/8033373ec152d9caa3026107dd999d149a4ba7cf#diff-b7977cf34206f8facf114ac5d6795021L22">exemplo de implementação da barra com o uso do primeiro link para ir para o conteúdo.</a>
 
 <p>Cole este código ao final antes do fechamento da tag &lt;body&gt;. A boa prática orienta que códigos JavaScript que modificam a página no momento do carregamento devem ser declarados ao final do elemento &lt;body&gt;.</p>
 
